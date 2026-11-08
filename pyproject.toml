@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "churnsignal"
+version = "0.1.0"
+description = "Small churn-prediction CLI built with scikit-learn"
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn",
+    "numpy",
+    "pandas",
+    "joblib",
+]
+
+[project.scripts]
+churnsignal = "churnsignal.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
