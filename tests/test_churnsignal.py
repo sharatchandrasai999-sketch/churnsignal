@@ -1,9 +1,6 @@
 """Tests for churnsignal."""
 
-import os
 
-import pandas as pd
-import pytest
 
 from churnsignal.cli import main
 from churnsignal.model import (
