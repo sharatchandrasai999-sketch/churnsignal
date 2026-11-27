@@ -5,7 +5,6 @@ import os
 import sys
 
 from churnsignal.model import (
-    FEATURES,
     generate_synthetic_data,
     load_data,
     load_model,
